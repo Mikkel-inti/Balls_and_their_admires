@@ -3,8 +3,19 @@
 Dette C-program er lavet i forbindelse med kursus: **62712 – Basic C-programming (Uge 09)**  
 Programmet bruger **raylib** til at animere bolde (i programmet 100), hvor hver bold følger en tilfældig bold, der i programmet bliver kaldt en leder.
 
+
+> [!WARNING]
+> ## **OBS**
+> Som det kan ses i videoen længere nede, har inkluderingen af **raylib** en rød streg under sig, 
+> hvilket kunne tyde på at det ikke er hentet og ikke kan bruges. Men som det også kan ses i video, kører programmet korrekt, når ***raylib*** er linket.
+> ### Hvor skal raylib mappen placeres?:
+> I dette screenshot, kan det ses hvor raylib- mappen skal placeres:
+>
+>  <img width="300" height="281" alt="image" src="https://github.com/user-attachments/assets/3d5884d2-9841-473b-ba3e-5979a096b890" />
+
+
 ## Beskrivelse af en bold:
-En bold har datastrukturen som en ***struct*** har følgende attributter/medlemmer:
+En bold har datastrukturen ***struct*** har følgende attributter/medlemmer:
 - Position *x* & *y*
 - Velocity *x* & *y*
 - Radius
@@ -42,9 +53,10 @@ En bold har datastrukturen som en ***struct*** har følgende attributter/medlemm
   - Opdaterer og tegner alle bolde pr. frame
 
 ## Eksempel kørsel
-Hvis programmet kører rigtigt, vil man kunne se dette poppe op:
+Hvis programmet kører rigtigt, vil der poppe et nyt vindue op med de animerede bolde som vist her i videoen:
 
 https://github.com/user-attachments/assets/33846f8e-25a4-48ec-9c83-b8f899557ecd
+
 
 
 
