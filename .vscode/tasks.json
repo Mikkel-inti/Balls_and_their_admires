@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "clang",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "args": [
+                "'@compile_flags.txt'",
+                "--driver-mode=gcc",
+                "-x",
+                "c",
+                "-std=gnu2y",
+                "-g",
+                "-I",
+                "${workspaceFolder}/raylib/include",
+                "./src/main.c",
+                "-o",
+                "main",
+                "-L",
+                "${workspaceFolder}/raylib/lib",
+                "-lraylib",
+                "-lopengl32",
+                "-lwinmm",
+                "-lgdi32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "./main",
+            "dependsOn": "build",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}
