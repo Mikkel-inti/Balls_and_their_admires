@@ -28,6 +28,7 @@ En bold har datastrukturen ***struct*** har følgende attributter/medlemmer:
   - initiering af bolde (position, farve, radius, hastighed)
   - kobling af en tilfældig leder for hver bold der initialiseres.
   - opdatering af både bevægelsen og tegningen af boldene
+- `compile_flags.txt`
 - `.vscode/tasks.json`
   - så det kan køre programmet med F5-tasten
 
